@@ -3,10 +3,17 @@
     --textColor:black;
     --headerBackgoundColor:green;
     --headerTextColor:purple; 
+    --heroTextColor:#ffffff;
 
 }
 
-
+ body{
+    /* background-color: #bebe65; */
+    background-color: var(--bg);
+    color: var(--textColor);
+    padding: 0%;
+    margin: 0%;
+}
 
 
 /* one CSS for all three webpages*/
@@ -14,7 +21,6 @@
 .hero{
 
     display: flex;
-  
     align-items: center;
     position: relative;
     height: 100vh;
@@ -33,7 +39,7 @@
 }
 .hero-text{
     position: absolute;
-    color: yellow;
+    color: var(--heroTextColor);
     top: 5%;
     font-size: 5vh;
     text-align: center;
@@ -47,7 +53,6 @@
 
     .hero-text{
         position: absolute;
-         color: yellow;
          top: 30%;
         text-align: center;
         font-size: 20px;
@@ -77,13 +82,7 @@ header{
     height: 70px;
 } 
 
-  body{
-    /* background-color: #bebe65; */
-    background-color: var(--bg);
-    color: var(--textColor);
-    padding: 0%;
-    margin: 0%;
-} 
+  
 
 .motivation{
     border: 10px solid  rgb(162, 11, 11);
@@ -106,6 +105,10 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#form-area{
+
+    display:none;
 }
 
   /************************************************************************************************************/
@@ -208,7 +211,7 @@ footer {
 
 .grid-area{
     display: grid;
-
+    padding: 1%;
     gap: 10px ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -220,54 +223,18 @@ footer {
     height: 100%;
 }
 
-.area1{
-
-    
-}
-
-.area2{
-
-    
-}
-
-.area3{
-
-    
-}
-
-.area4{
-
-    
-}
-
-.area5{
-
-   
-}
-
 .area6{
     grid-row: span 2;   
    
 }
 
-.area7{
-   
- 
-}
-
-
 @media screen and (max-width: 800px) {
-    
-
     .grid-area{
         display: grid;
-    
         gap: 10px ;
         grid-template-columns:1fr;
         grid-template-rows: auto;
     }
-    
-
 }
 
 .image-container{
